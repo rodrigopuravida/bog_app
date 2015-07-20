@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>BogApp</title>
+  <title>Creatures</title>
 
   <!-- Latest compiled and minified CSS & JS -->
   <link rel="stylesheet" media="screen" href="//netdna.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
@@ -11,11 +12,17 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-
 </head>
 <body>
+<div class="container">
 
-<%= yield %>
+<h1>Editing Creature</h1>
+
+<%= render 'form' %>
+
+<%= link_to 'Show', @creature, class: 'btn btn-info btn-xs' %> |
+<%= link_to 'Back', creatures_path, class: 'btn btn-default btn-xs' %>
+</div>
 
 </body>
 </html>
