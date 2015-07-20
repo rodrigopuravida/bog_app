@@ -30,11 +30,8 @@
   <%= @creature.description %>
 </p>
 
-<tr>
-<td><%= link_to 'Edit', edit_creature_path(@creature), class: 'btn btn-primary btn-xs glyphicon glyphicon-pencil pull-right' %></td>
-<td><%= link_to 'Back', creatures_path, class: 'btn btn-default btn-xs glyphicon glyphicon-fast-backward pull-left' %></td>
-</tr>
-
+<%= link_to 'Edit', edit_creature_path(@creature), class: 'btn btn-primary btn-xs glyphicon glyphicon-pencil pull-left' %>
+<%= link_to 'Back', creatures_path, class: 'btn btn-default btn-xs glyphicon glyphicon-fast-backward pull-left' %>
 
 </div>
 </body>
